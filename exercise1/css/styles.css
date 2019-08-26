@@ -1,0 +1,58 @@
+body{
+
+    background-color: grey;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 14px;
+}
+
+h1{
+ font-size: 2em;
+}
+
+h2{
+ font-size: 1.5em;
+}
+
+h3, h4, h5, h6{
+ font-size: 1.25em;
+}
+
+header{
+ font-size: 2.25em;
+}
+
+footer{
+ font-size: 0.75em;
+}
+
+nav{
+  font-size: 0.75em;
+}
+
+#main{
+
+}
+
+#wrapper{
+
+}
+
+p{}
+
+ul{
+
+}
+
+li{
+
+}
+
+a{
+    font-size: 0.75em;
+}
+
+.images{
+    column-count: 2;
+}
+
+
