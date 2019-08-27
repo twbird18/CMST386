@@ -7,6 +7,7 @@ body{
 
 h1{
  font-size: 2em;
+
 }
 
 h2{
@@ -18,7 +19,9 @@ h3, h4, h5, h6{
 }
 
 header{
+    background-color: lightblue;
  font-size: 2.25em;
+  margin:15px;
 }
 
 footer{
@@ -27,7 +30,13 @@ footer{
 
 nav{
   font-size: 0.75em;
+  float: right;
 }
+
+header h1, header nav{
+    display: inline;
+}
+
 
 #main{
 
@@ -39,12 +48,21 @@ nav{
 
 p{}
 
-ul{
-
+nav ul{
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-li{
+nav li{
+float: left;
+}
 
+nav li a{
+    display: block;
+  padding: 8px;
+  background-color: #dddddd;
 }
 
 a{
@@ -55,4 +73,13 @@ a{
     column-count: 2;
 }
 
+section{
+    border-bottom: solid black;
+}
 
+.img{
+    width:400px;
+    background:#fff;
+    padding:18px 18px 2px 18px;
+    border:1px solid #999
+}
