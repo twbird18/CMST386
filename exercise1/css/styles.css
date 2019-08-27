@@ -1,8 +1,10 @@
 body{
 
-    background-color: grey;
+    background-color: #75ABBC;
     font-family: 'Merriweather', sans-serif;
     font-size: 14px;
+    margin: 0;
+    color: #DFE0E2;
 }
 
 h1{
@@ -12,6 +14,7 @@ h1{
 
 h2{
  font-size: 1.5em;
+ text-align: center;
 }
 
 h3, h4, h5, h6{
@@ -19,23 +22,34 @@ h3, h4, h5, h6{
 }
 
 header{
-    background-color: lightblue;
+    background-color: #A2AEBB;
  font-size: 2.25em;
-  margin:15px;
+  position: relative;
+    display: flex;
+    flex-direction: row;
+
 }
+
 
 footer{
  font-size: 0.75em;
+
+}
+
+footer p{
+    text-align: center;
 }
 
 nav{
   font-size: 0.75em;
   float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
 }
 
-header h1, header nav{
-    display: inline;
-}
+
 
 
 #main{
@@ -57,6 +71,7 @@ list-style-type: none;
 
 nav li{
 float: left;
+
 }
 
 nav li a{
@@ -65,21 +80,54 @@ nav li a{
   background-color: #dddddd;
 }
 
+nav li a:hover{
+    color: black;
+    background: white;
+
+}
 a{
     font-size: 0.75em;
 }
 
+a:visited{
+    color:blueviolet;
+}
+a:active{
+    color:crimson;
+}
+
 .images{
     column-count: 2;
+    width: 80%;
+    margin: auto;
+
+
 }
 
 section{
-    border-bottom: solid black;
+    border-bottom: solid #071013;
+
+
 }
 
 .img{
-    width:400px;
-    background:#fff;
-    padding:18px 18px 2px 18px;
-    border:1px solid #999
+    width:300px;
+    background: #071013;
+    padding:18px;
+    border:1px solid blueviolet;
+    text-align: center;
+    margin: 25px;
+}
+
+img:hover{
+    transform: scale(1.6);
+}
+
+img{
+    display:inline-block
+}
+
+.desc{
+
+    color: #DFE0E2;
 }
