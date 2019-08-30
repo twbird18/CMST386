@@ -69,6 +69,7 @@ section{
   -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
   border-radius:25px;
   margin: 20px auto;
+  padding: 20px;
 
 }
 
@@ -76,12 +77,30 @@ section{
     list-style-type: cjk-heavenly-stem;
 }
 
+
+
 article h3{
     margin: 20px 50px;
 }
 
 .inside{
-    margin: 0px 50px
+    margin: 0px 50px;
+    counter-reset: my-counter;
+}
+
+.inside dt::before{
+
+    content: counter(my-counter, decimal);
+    counter-increment: my-counter;
+    padding: 10px;
+}
+
+.inside dd::before{
+   content: "\2605";
+}
+
+.inside dt{
+    margin: 5px;
 }
 p {}
 
