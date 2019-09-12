@@ -12,6 +12,9 @@ h1 {
 	font-size: 2em;
 }
 
+.learning{
+    text-align: center;
+}
 h2 {
 	font-size: 1.5em;
 	text-align: center;
@@ -168,4 +171,13 @@ img {
 
 .desc {
 	color: #DFE0E2;
+}
+
+.asterisk{
+    color: red;
+}
+
+textarea {
+    width: 350px;
+    height: 150px;
 }

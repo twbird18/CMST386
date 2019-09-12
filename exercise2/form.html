@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description=" content="This site contains exercises 1-4 for CMST 386">
+	<title>Exercise 2 form - Jennifer Brady</title>
+	<link rel="stylesheet" type="text/css" href="../exercise1/css/styles.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Jennifer Brady - CMST 386</h1>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="../exercise1/index.html">Home</a></li>
+				<li><a href="../exercise1/ex1.html">Exercise 1</a></li>
+				<li><a href="../exercise2/index.html">Exercise 2</a></li>
+				<li><a href="ex3.html">Exercise 3</a></li>
+				<li><a href="ex4.html">Exercise 4</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form action="mailto:jbrady02125@gmail.com" method="post" enctype="text/plain" id="contactform">
+			<fieldset>
+				<legend>Contact Me:</legend>
+				Name:<span class="asterisk">*</span><br>
+            <input type="text" name="name"><br>
+            Address:<br>
+            <input type="text"  name="address"><br>
+            Home Phone:<br>
+            <input type="text"  name="phone"><br>
+            Cell Phone:<br>
+            <input type="text" name="cell"><br>
+            Email Address: <span class="asterisk">*</span><br>
+            <input type="text" name="email"><br>
+            Question/Comments:<br>
+            <textarea name="comments" form="contactform">Enter Comments here</textarea><br>
+            Employment Status:<br>
+            <input type="checkbox" name="job1" value="Employed">Employed<br>
+            <input type="checkbox" name="job2" value="Student">Student<br>
+            <input type="checkbox" name="job3" value="Retired">Retired<br>
+            Gender:<br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+             <input type="radio" name="gender" value="other"> Other
+
+            Age:<br>
+            <select name="age">
+            <option value="-18">under 18</option>
+            <option value="18-24">18-24</option>
+            <option value="25-40">25-40</option>
+            <option value="40+">over 40</option>
+     </select>
+         <br>
+         <input type="submit" value="submit"><br>
+
+         <span class="asterisk">*-required field</span>
+
+        </fieldset></form>
+
+
+	</main>
+	<footer>
+		<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386a03%2Fexercise1%2Findex.html">Validated!</a>
+
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+</footer>
+</body>
+
+</html>
