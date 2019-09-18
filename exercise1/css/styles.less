@@ -1,0 +1,19 @@
+@background: #F5ECCD;
+@link:#FF47DA;
+@link1:darken(@link, 25%);
+@link2:lighten(@link, 25%);
+
+body{
+    background-color: @background;
+    font-family: 'Merriweather', serif;
+}
+
+nav, a{
+    color:@link;
+    display:block;
+    float:right;
+
+    &:hover{color:@link1}
+    &:active{color:@link2}
+
+    }
