@@ -7,14 +7,16 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description=" content="This site contains exercises 1-4 for CMST 386">
 	<title>Exercise 3 - Jennifer Brady</title>
-  <!--
-    <link rel="stylesheet" type="text/css" href="../exercise1/css/styles.css">-->
+
+	<link rel="stylesheet" type="text/css" href="../exercise1/css/styles.css">
 
 
-    <!--Implement LESS preprocessor using javascript-->
-    <link rel="stylesheet/less" type="text/css" href="../exercise1/css/styles.less" />
+	<!--Implement LESS preprocessor using javascript-->
+	<link rel="stylesheet/less" type="text/css" href="../exercise1/css/styles.less" />
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js">
+
+	</script>
 
 </head>
 
@@ -23,68 +25,136 @@
 		<h1>Exercise 3 - CMST 386</h1>
 		<nav class="main-nav">
 			<ul>
-					<li><a href="../exercise1/index.html">Home</a></li>
+				<li><a href="../exercise1/index.html">Home</a></li>
 				<li><a href="../exercise1/ex1.html">Exercise 1</a></li>
 				<li><a href="../exercise2/index.html">Exercise 2</a></li>
 				<li><a href="../exercise3/index.html">Exercise 3</a></li>
 				<li><a href="ex4.html">Exercise 4</a></li>
 			</ul>
+
+
 		</nav>
 	</header>
 	<main>
 		<article>
-			<h2>Introduction</h2>
+			<ul class="breadcrumb">
+				<li><a href="#javascript">JavaScript- Date</a></li>
+				<li><a href="#combos">JavaScript - Double Combo Box</a></li>
+				<li><a href="#seo">SEO-Links</a></li>
+                <li><a href="#xml">SEO-XML</a></li>
+			</ul>
+			<h2 id="JavaScript">JavaScript</h2>
+
+			<div id="date">
+				<script>
+					document.write(Date())
+				</script>
+			</div>
+
+
 			<section>
-				<h3>General Info</h3>
-				<dl class="inside">
-					<dt>What's your major?</dt>
-					<dd>Digital Media and Web Technology</dd>
-					<dt>Is this your first online class?</dt>
-					<dd>No, I have taken online classes at multiple schools.</dd>
-					<dt>How would you describe your level of expertise with computers in general?</dt>
-					<dd>Advanced. I have used computers for over 30 years. It has been 25 years since I made my first web site. Although
-						I don't work in a computer field, I have used computers in a large variety of ways from simple office work to programming
-						PLC's on a nuclear reactor.
-					</dd>
-					<dt>When did you take CMST 385?</dt>
-					<dd>Spring 2019</dd>
-				</dl>
-			</section>
-			<section>
-				<h3>Web Design Info</h3>
-				<dl class="inside">
-					<dt>Do you currently work in Web Design? If so, what do you do? (eg. Web developer or webmaster for a company, freelance
-						web designer, etc.)</dt>
-					<dd>No, I have only created sites as a hobby.</dd>
-					<dt>What scripting languages or web technologies do you know (eg. JavaScript, Java, PHP, etc.)? What is your level of
-						expertise?
-					</dt>
-					<dd>I have used many scripting languages casually: <ul class="lang">
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JavaScript</li>
-							<li>Python</li>
-							<li>Java</li>
-							<li>Ruby</li>
-						</ul>
-					</dd>
-					<dt>In this class, you’ll be hand coding HTML and CSS using a text editor. What is your editor of choice (eg. Windows
-						Notepad, Notepad++, EditPad, BBEdit, Mac Text Edit, Text Wrangler, etc.)?</dt>
-					<dd>I am currently learning how to use GitPod so that will be my editor of choice for this class.</dd>
-				</dl>
+				<h2>Date</h2>
+				<p>The Date object is built directly into Javascript and calls from the current system settings. To use the object for
+					other purposes, it is important to know that dates are expressed in milliseconds since 1/1/1970 as this is the start
+					date for all UNIX computers.
+					<br><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">Date-JavaScript</a></p>
 
 			</section>
-			<section>
-				<h3>About my computer</h3>
-				<dl class="inside">
-					<dt>What type of computer do you have? (Apple, PC)</dt>
-					<dd>PC</dd>
-					<dt>What Operating System do you use? (Windows XP, Windows Vista, Mac OS, linux)</dt>
-					<dd>Windows 10</dd>
-					<dt>Which web browser or browsers do you use (Please include type)</dt>
-					<dd>Mainly Google Chrome</dd>
-				</dl>
+
+
+			<section id="combos">
+				<h2>Double Combo Box</h2>
+
+                <p>A combo script with 2 boxes where the second box is dependent on the first box. As seen here, I could eventually use this
+                as a way to filter recipes on my final on my website.</p>
+				<form name="doublecombo">
+<p><select name="example" size="1" onChange="redirect(this.options.selectedIndex)">
+<option>Breakfast</option>
+<option>Lunch</option>
+<option>Dinner</option>
+</select>
+<select name="stage2" size="1">
+<option value="https://www.instagram.com/p/B2UMWHWhKEi/?utm_source=ig_web_copy_link">Tofu Scramble Burrito</option>
+<option value="https://www.instagram.com/p/B17QG3lBpn9/?utm_source=ig_web_copy_link">Chocolate Oatmeal Bowl</option>
+<option value="http://www.wired.com">Wired News</option>
+</select>
+<input type="button" name="test" value="Go!"
+onClick="go()">
+</p>
+
+<script>
+<!--
+
+/*
+Double Combo Script Credit
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScripts here!
+*/
+
+var groups=document.doublecombo.example.options.length
+var group=new Array(groups)
+for (i=0; i<groups; i++)
+group[i]=new Array()
+
+group[0][0]=new Option("Tofu Scramble Burrito","https://www.instagram.com/p/B2UMWHWhKEi/?utm_source=ig_web_copy_link")
+group[0][1]=new Option("Chocolate Oatmeal Bowl","https://www.instagram.com/p/B17QG3lBpn9/?utm_source=ig_web_copy_link")
+group[0][2]=new Option("Banana Oatmeal Pancakes","https://www.instagram.com/p/BujVzGuFH-P/?utm_source=ig_web_copy_link")
+
+group[1][0]=new Option("Corn and Black Bean Bowl","https://www.instagram.com/p/Bv6-jZVFpY3/?utm_source=ig_web_copy_link")
+group[1][1]=new Option("Fried Rice Bowl","https://www.instagram.com/p/Bwxz1Y-BUTy/?utm_source=ig_web_copy_link")
+
+group[2][0]=new Option("Vegan Shepherds Pie","https://www.instagram.com/p/B11y2x3heZs/?utm_source=ig_web_copy_link")
+group[2][1]=new Option("Baked Potato with Tofu","https://www.instagram.com/p/Bz-8CRnBgRt/?utm_source=ig_web_copy_link")
+group[2][2]=new Option("Vegan Sloppy Joes","https://www.instagram.com/p/Bv9ccNZFfId/?utm_source=ig_web_copy_link")
+
+
+var temp=document.doublecombo.stage2
+
+function redirect(x){
+for (m=temp.options.length-1;m>0;m--)
+temp.options[m]=null
+for (i=0;i<group[x].length;i++){
+temp.options[i]=new Option(group[x][i].text,group[x][i].value)
+}
+temp.options[0].selected=true
+}
+
+function go(){
+location=temp.options[temp.selectedIndex].value
+}
+//-->
+</script>
+
+</form>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p>
+
 			</section>
+			<section id="seo">
+				<h2>SEO</h2>
+
+                <p>List considerations for building good quality links</p>
+				<ul>
+            <li>Is the link relevant?</li>
+            <li>Is the link trustworthy?</li>
+            <li>Does it present expert level information?</li>
+            <li>Is it unique & SEO friendly?</li>
+          </ul>
+			</section>
+
+            <section id="xml">
+            <h2>XML</h2>
+
+            <p>An XML sitemap shows the content of your site and how it links together. It is important to help inform search
+            engings of the content on your site so that this information can be found more easily during a search. Typically, a search
+            engine will automatically look at your site's information, but a site map ensures that all of your content is properly read and
+            reported. An automated search might miss part of the site or not see how certain information is connected.
+            A sitemap tells the crawler exactly what is on your site and how it should be connected. </p><br><br>
+             <a href="../exercise3/sitemap.xml" target="_blank">XML Sitemap</a>
+            </section>
 
 		</article>
 	</main>
@@ -92,8 +162,8 @@
 		<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386a03%2Fexercise1%2Findex.html">Validated!</a>
 
 		<p>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
             alt="Valid CSS!" />
     </a>

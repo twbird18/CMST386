@@ -1,19 +1,72 @@
-@background: #F5ECCD;
-@link:#FF47DA;
+@color0: #eeeedd; //box background color
+@color1: #dfe0e2; //main text color
+@color2: #071013; //black color
+@link:#CAA3F6;
 @link1:darken(@link, 25%);
 @link2:lighten(@link, 25%);
 
+
 body{
-    background-color: @background;
-    font-family: 'Merriweather', serif;
+    color:@color1;
 }
 
-nav, a{
+
+nav {
+	bottom: 0;
+	float: right;
+	font-size: 0.75em;
+	position: absolute;
+	right: 0;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+	li {
+		float: left;
+		a {
+			background-color: @color0;
+            display: block;
+			padding: 8px;
+            &:hover {
+				background: white;
+				color:@color2;
+			}
+		}
+	}
+}
+
+a {
+	font-size: 0.75em;
     color:@link;
-    display:block;
-    float:right;
+	&:visited {
+		color: @link1;
+	}
+	&:active {
+		color: @link2;
+	}
+}
 
-    &:hover{color:@link1}
-    &:active{color:@link2}
+.desc{
+    color:@color1;
+}
 
-    }
+.img{
+    background:@color2;
+}
+
+section{
+    background-color: @color0;
+    border-bottom: solid @color2;
+}
+
+header{
+    border-bottom: 1.5px solid @color2;
+}
+
+footer{
+    color:@color2;
+    border-top: solid @color2;
+}
