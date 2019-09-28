@@ -181,3 +181,31 @@ ul.breadcrumb li a:hover {
 #anchor:hover{
     background-color: #968F16;
 }
+
+@media print{
+    header, footer, nav, #anchor, #search {
+        display: none;
+    }
+body{
+    background-color: white;
+    color: black;
+    background: none;
+}
+section{
+
+    background-color: white !important;
+    filter: none;
+    box-shadow: none;
+
+}
+
+}
+
+@media (orientation:portrait){
+
+    body{
+        background-color: #75bc79;
+	    background: rgb(223,224,226);
+        background: linear-gradient(319deg, rgba(223,224,226,1) 0%, rgba(117,188,121,1) 71%, rgba(12,59,69,1) 100%);
+    }
+}
