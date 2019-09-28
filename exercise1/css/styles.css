@@ -38,6 +38,7 @@ header {
 footer {
 	font-size: 1.25em;
     text-align: center;
+
 }
 
 
@@ -48,6 +49,7 @@ article {
 }
 
 section{
+
     width:90%;
   border: solid 1px #555;
   filter: drop-shadow(10px -10px 5px  rgba(0,0,0,0.6));
@@ -163,3 +165,19 @@ ul.breadcrumb li a:hover {
     text-align: center;
 }
 
+#search{
+    float: top;
+}
+
+#anchor{
+    background-color: #EDEAB9;
+    text-align: center;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+
+}
+#anchor:hover{
+    background-color: #968F16;
+}
